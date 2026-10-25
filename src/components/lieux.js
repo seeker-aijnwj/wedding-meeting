@@ -20,3 +20,17 @@ export const lieux = [
     requete: 'Ecole Sipim Planètes, Sipim 4 Palmeraie, Cocody, Abidjan', // recherche Google Maps
   },
 ]
+
+export const rsvp = [
+  {
+    url: 'https://docs.google.com/forms/d/e/1FAIpQLSdHk2Y6iFPsvvkjZXSN3zSY0D4Y9DjxD0HSYQDUWNca9n4_Uw/viewform?usp=dialog', // lien de votre formulaire (Google Forms, etc.)
+    limite: '2026-11-28',
+  },
+]
+
+export const transactionWays = [
+  {
+    numero: '(+225) 07 58 29 71 34', // lien de votre formulaire (Google Forms, etc.)
+    operateur: 'Wave',
+  },
+]

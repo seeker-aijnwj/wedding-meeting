@@ -33,7 +33,7 @@ export const config = {
     { heure: '09h00', titre: 'Cérémonie civile', lieu: 'mairie', texte: "L'échange des consentements devant l'officier d'état civil." },
     { heure: '12h00', titre: 'Bénédiction nuptiale', lieu: 'eead-temple-piete', texte: 'Nous unissons nos vies devant Dieu et nos proches.' },
     { heure: '14h00', titre: 'Réception', lieu: 'sipim', texte: 'Repas, musique et danse pour partager notre joie.' },
-    { heure: '17h00', titre: 'Remerciements', lieu: 'sipim', texte: 'Un mot de gratitude pour tous ceux qui ont fait de ce jour un souvenir inoubliable.' },
+    { heure: '16h30', titre: 'Remerciements', lieu: 'sipim', texte: 'Un mot de gratitude pour tous ceux qui ont fait de ce jour un souvenir inoubliable.' },
   ],
 
   tenue: {

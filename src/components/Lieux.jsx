@@ -8,7 +8,7 @@ const route = (q) => `https://www.google.com/maps/dir/?api=1&destination=${encod
 export default function Lieux() {
   const lieux = c.lieux.filter((l) => c.programme.some((p) => p.lieu === l.id))
   return (
-    <section className="bg-nuit text-white px-5 py-20">
+    <section id="lieux" className="bg-nuit text-white px-5 py-20">
       <div className="max-w-4xl mx-auto">
         <Titre petit="Où nous retrouver" text={lieux.length > 1 ? 'Les lieux' : 'Le lieu'} light />
         <div className="grid gap-6 sm:grid-cols-2 items-stretch">
