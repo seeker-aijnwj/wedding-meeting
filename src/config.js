@@ -26,12 +26,13 @@ export const config = {
       adresse: 'Cité Sipim 4, Palmeraie, Cocody, Abidjan',
       requete: 'Ecole Sipim Planètes, Sipim 4 Palmeraie, Cocody, Abidjan', // recherche Google Maps
     },
+    
   ],
 
   // Programme : "lieu" = id d'un lieu ci-dessus
   programme: [
-    { heure: '09h00', titre: 'Cérémonie civile', lieu: 'mairie', texte: "L'échange des consentements devant l'officier d'état civil." },
-    { heure: '12h00', titre: 'Bénédiction nuptiale', lieu: 'eead-temple-piete', texte: 'Nous unissons nos vies devant Dieu et nos proches.' },
+    { heure: '08h00', titre: 'Cérémonie civile', lieu: 'mairie', texte: "L'échange des consentements devant l'officier d'état civil." },
+    { heure: '11h00', titre: 'Bénédiction nuptiale', lieu: 'eead-temple-piete', texte: 'Nous unissons nos vies devant DIEU et nos proches.' },
     { heure: '14h00', titre: 'Réception', lieu: 'sipim', texte: 'Repas, musique et danse pour partager notre joie.' },
     { heure: '16h30', titre: 'Remerciements', lieu: 'sipim', texte: 'Un mot de gratitude pour tous ceux qui ont fait de ce jour un souvenir inoubliable.' },
   ],
@@ -39,9 +40,8 @@ export const config = {
   tenue: {
     texte: "Toute tenue élégante est la bienvenue, du moment qu'elle comporte au moins une de nos couleurs.",
     couleurs: [
-      { nom: 'Bleu nuit', hex: '#0f1d44' },
+      { nom: 'Bleu marine', hex: '#000080' },
       { nom: 'Orange', hex: '#e8762d' },
-      { nom: 'Bleu ciel', hex: '#4aa5de' },
       { nom: 'Saumon', hex: '#f5a98c' },
     ],
   },

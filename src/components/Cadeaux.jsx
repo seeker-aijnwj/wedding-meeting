@@ -1,7 +1,7 @@
 import { config as c } from '../config.js'
 import { wishlist, wishlistIntro } from '../wishlist.js'
 import { Photo, Reveal, Titre } from './ui.jsx'
-import Pied from '../Pied.jsx'
+import Pied from './Pied.jsx'
 
 // Grille adaptative : 2 éléments par ligne (téléphone), 3 (tablette ≥640px), 4 (ordinateur ≥1024px)
 export default function Cadeaux() {

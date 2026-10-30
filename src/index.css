@@ -2,11 +2,12 @@
 
 /* Couleurs et polices tirées des pagnes (bleu nuit, orange, bleu ciel) */
 @theme {
+  --color-ciel: #4aa5de;
+  --color-creme: #fbf6ee;
+  --color-marine: #000080;
   --color-nuit: #0f1d44;
   --color-orange: #e8762d;
-  --color-ciel: #4aa5de;
   --color-saumon: #f5a98c;
-  --color-creme: #fbf6ee;
   --font-script: "Great Vibes", cursive;
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Jost", system-ui, sans-serif;

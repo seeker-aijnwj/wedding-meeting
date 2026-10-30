@@ -4,7 +4,7 @@ import { BottomNav, Countdown, Envelope, Photo, Reveal, Titre, Words } from './c
 import Lieux from './components/Lieux.jsx'
 import Cadeaux from './components/Cadeaux.jsx'
 import Programme from './components/Programme.jsx'
-import Pied from './Pied.jsx'
+import Pied from './components/Pied.jsx'
 
 const fmt = (d, o) => new Date(d).toLocaleDateString('fr-FR', o)
 const dateLongue = fmt(c.date, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
@@ -13,7 +13,7 @@ const carte = 'bg-white rounded-3xl shadow-[0_12px_40px_-18px_rgba(15,29,68,.35)
 function Accueil() {
   return (
     <header id="accueil" className="relative min-h-svh overflow-hidden flex flex-col items-center justify-center text-center px-6 py-20 text-white">
-      <div className="absolute inset-0"><Photo src="photos/hero.svg" alt="" /></div>
+      <div className="absolute inset-0"><Photo src="photos/hero.svg" alt="Bannière d'accueil" /></div>
       <div className="absolute inset-0 bg-gradient-to-b from-nuit/80 via-nuit/45 to-nuit/90" />
       <span className="orb bg-orange w-60 h-60 -top-16 -right-20" />
       <span className="orb bg-ciel w-64 h-64 bottom-16 -left-24" style={{ animationDelay: '-6s' }} />
@@ -38,8 +38,8 @@ function Rsvp() {
         <div className="kente absolute top-0 inset-x-0" />
         <p className="text-[.68rem] tracking-[.4em] uppercase text-saumon mb-3">R.S.V.P</p>
         <h2 className="font-serif text-4xl leading-tight">Confirmer ma présence</h2>
-        <p className="font-serif italic text-lg mt-4 mb-7 text-white/85">Merci de nous répondre avant le <b className="not-italic text-orange">{fmt(c.rsvp.limite, { day: 'numeric', month: 'long', year: 'numeric' })}</b>.</p>
-        <a href={c.rsvp.url} target="_blank" rel="noreferrer" className="btn bg-orange text-white">Répondre à l'invitation</a>
+        <p className="font-serif italic text-lg mt-4 mb-7 text-white/85">Merci de nous répondre pour une meilleure organisation afin que la fête soit agréable pour tous.</p>
+        <a href={c.rsvp.url} target="_blank" rel="noreferrer" className="btn bg-orange text-white">Répondre avant le {fmt(c.rsvp.limite, { day: 'numeric', month: 'long', year: 'numeric' })}</a>
         <p className="mt-6"><a href="#/cadeaux" className="text-sm underline underline-offset-4 text-white/80">Voir notre liste de cadeaux →</a></p>
       </Reveal>
     </section>
@@ -54,7 +54,7 @@ function Tenue() {
         <Reveal>
           <div className="h-72 w-52 rounded-t-full overflow-hidden mx-auto mb-8 shadow-xl ring-4 ring-white"><Photo src="photos/couple.svg" alt="" /></div>
           <p className="font-serif text-xl italic">{c.tenue.texte}</p>
-          <div className="grid grid-cols-4 gap-3 mt-8">
+          <div className="grid grid-cols-3 gap-3 mt-8">
             {c.tenue.couleurs.map((k) => (
               <div key={k.hex} className={`${carte} py-4 !rounded-2xl`}>
                 <div className="w-10 h-10 rounded-full mx-auto shadow-inner" style={{ background: k.hex }} />
